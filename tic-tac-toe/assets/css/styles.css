@@ -1,0 +1,58 @@
+/***** RESET *****/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/********* DESIGN SYSTEM ********/
+:root {
+  --rowGap: 5rem;
+  --gap: 1rem;
+
+  /* text sizes */
+  --smText: 1rem;
+  --lgText: 1.125rem;
+
+  /* colors */
+  --light-grey: hsl(202, 32%, 15%);
+  --dark-grey: hsl(202, 32%, 15%);
+  --white: hsl(0, 0%, 100%);
+  --lightBlue: hsl(234, 25%, 52%);
+  --darkblue: hsl(233, 54%, 16%);
+  --grey: hsl(232, 10%, 56%);
+  --peach: hsl(341, 92%, 62%);
+  --lightPeach: hsl(341, 100%, 83%);
+
+  /* spacing */
+  --xsPadding: 0.8rem;
+  --smPadding: 1.2rem;
+  --mdPadding: 2.4rem;
+  --lgPadding: 3.6rem;
+  --xlPadding: 4.8rem;
+  --xsMargin: 0.8rem;
+  --smMargin: 1.2rem;
+  --mdMargin: 2.4rem;
+  --lgMargin: 3.6rem;
+  --xlMargin: 4.8rem;
+
+  /* font weight */
+  --mdFontWeight: 500;
+  --lgFontWeight: 800;
+}
+
+
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.75;
+  min-height: 100%;
+  background-color: var(--light-grey);
+  color: #dbe8ed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+}
