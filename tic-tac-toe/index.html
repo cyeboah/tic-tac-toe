@@ -12,6 +12,8 @@
     />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/game-board.css" />
+    <script src="app.js" defer></script>
     <title>Frontend Mentor | Tic Tac Toe</title>
   </head>
   <body>
@@ -41,28 +43,82 @@
       </div>
     </section>
 
-    New Game (vs CPU) New Game (vs player)
-
     <!-- New game menu end -->
 
     <!-- Game board start -->
 
-    <!-- x/o icon -->
-    turn X (You)
-    <!-- Your score -->
-    Ties
-    <!-- Ties score -->
-    X (CPU)
-    <!-- CPU score -->
+    <section class="game-board-start">
+      <div class="game-board-start-box">
+        <!-- Row 1 Start -->
+        <div class="player-icon-box">
+          <img src="assets/icon-x.svg" alt="icon x" />
+          <img src="assets/icon-o.svg" alt="icon o" />
+        </div>
 
-    Oh no, you lost You won! Player
-    <!-- 1/2 -->
-    wins!
+        <div class="player-turn">
+          <img src="assets/icon-x-grey.svg" class="icon-x" alt="icon x" />
+          <span>turn</span>
+        </div>
 
-    <!-- x/o icon -->
-    takes the round Round tied Restart game? Quit Next round No, cancel Yes,
-    restart
+        <button class="restart-icon-btn">
+          <img
+            src="assets/icon-restart.svg"
+            class="restart-icon"
+            alt="icon restart"
+          />
+        </button>
 
-    <!-- Game board end -->
+        <!-- Row 1 End -->
+
+        <!-- Row 2 - 4 Start -->
+        <div class="playing-board" id="0"></div>
+        <div class="playing-board" id="1"></div>
+        <div class="playing-board" id="2"></div>
+        <div class="playing-board" id="3"></div>
+        <div class="playing-board" id="4"></div>
+        <div class="playing-board" id="5"></div>
+        <div class="playing-board" id="6"></div>
+        <div class="playing-board" id="7"></div>
+        <div class="playing-board" id="8"></div>
+        <!-- Row 2 - 4 End -->
+
+        <!-- Row 5 Start -->
+        <!-- Your score -->
+        <div class="your-score scores">
+          <span>X (YOU)</span>
+          <p>0</p>
+        </div>
+
+        <!-- Ties score -->
+        <div class="ties-score scores">
+          <span>TIES</span>
+          <p>0</p>
+        </div>
+
+        <!-- CPU score -->
+        <div class="cpu-score scores">
+          <span>O(CPU)</span>
+          <p>0</p>
+        </div>
+
+        <!-- Row 5 End -->
+      </div>
+
+      <!-- <div style="display: block; min-height: 100vh; background-color: red">
+        <h1>game-board-start</h1>
+      </div> -->
+    </section>
+
+    <div class="others">
+      Oh no, you lost You won! Player
+      <!-- 1/2 -->
+      wins!
+
+      <!-- x/o icon -->
+      takes the round Round tied Restart game? Quit Next round No, cancel Yes,
+      restart
+
+      <!-- Game board end -->
+    </div>
   </body>
 </html>
